@@ -5,12 +5,10 @@ typedef struct {
     float marks;
 } Student;
 
-void printStudent(Student s)   // structure passed to function
-{
-    printf("\nStudent Details:\n");
-    printf("Roll: %d\n", s.roll);
-    printf("Marks: %.2f\n", s.marks);
-}
+void printStudent(Student &s1)   
+{ s1->marks +=100;
+
+   }
 
 int main()
 {
@@ -22,7 +20,10 @@ int main()
     printf("Enter Marks: ");
     scanf("%f", &s1.marks);
 
-    printStudent(s1);   // pass structure
+    printStudent(*s1);        printf("\nStudent Details:\n");
+    printf("Roll: %d\n", s.roll);
+    printf("Marks: %.2f\n", s.marks);
+
 
     return 0;
 }
