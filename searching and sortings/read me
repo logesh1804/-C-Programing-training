@@ -1,1 +1,14 @@
+Searching Algorithms in C
 
+This repository contains implementation of:
+
+- Linear Search
+- Binary Search
+- Sentinel Linear Search
+
+## Author
+Logesh
+
+## Description
+These programs demonstrate basic searching techniques in C language.
+Useful for interviews and embedded systems fundamentals.
