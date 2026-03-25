@@ -1,0 +1,22 @@
+	   LXI H,2000
+	   MOV C,M
+	   DCR C
+
+OTR:	   LXI H,2001
+	   MOV B,C
+
+INN:	   MOV A,M
+	   INX H
+	   CMP M
+	   JC SKIP
+	   MOV D,M
+	   MOV M,A
+	   DCX H
+	   MOV M,D
+	   INX H
+
+SKIP:	   DCR B
+	JNZ INN
+DCR C
+JNZ OTR
+HLT 
