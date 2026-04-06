@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void func() {
+    static int x = 1;  // initialized only once
+    x++;
+    printf("%d ", x);
+}
+
+int main() {
+    func();
+    func();
+    func();
+    return 0;
+}
