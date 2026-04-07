@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    int a=10;
+    static int l =20;stack
+    printf("%p\n%p",a,l);
+    return 0;
+}
