@@ -1,0 +1,2 @@
+MOV P1, #00H     
+SETB P1.0       
