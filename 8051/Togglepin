@@ -1,0 +1,11 @@
+MAIN:
+    CPL P1.2       ; Toggle P1.2
+    ACALL DELAY    ; Call delay
+    SJMP MAIN  
+
+DELAY:
+    MOV R0, #255
+D1: MOV R1, #255
+D2: DJNZ R1, D2
+    DJNZ R0, D1
+    RET
