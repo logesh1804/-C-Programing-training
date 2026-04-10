@@ -1,0 +1,5 @@
+ORG 000H 
+MOV A, #0AAH
+MOV P1,A
+SJMP $
+	END 
