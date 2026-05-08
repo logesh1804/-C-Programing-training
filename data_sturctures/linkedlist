@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+int main() {
+
+    struct Node* head = NULL;
+
+    // First node
+    struct Node* n1 =
+    (struct Node*)malloc(sizeof(struct Node));
+
+    n1->data = 10;
+    n1->next = NULL;
+
+    // Second node
+    struct Node* n2 =
+    (struct Node*)malloc(sizeof(struct Node));
+
+    n2->data = 20;
+    n2->next = NULL;
+
+    // Linking
+    n1->next = n2;
+    head = n1;
+
+    // Traversing
+    struct Node* temp = head;
+
+    while(temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+
+    return 0;
+}
